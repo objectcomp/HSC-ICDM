@@ -2008,12 +2008,13 @@ var Transitioner = function () {
 
 			if (force) {
 				this._animation && this._animation.disable();
-			} else {
-				this._animation && this._animation.enable();
-				this._animating = true;
-			}
+			} 
+			// else {
+			// 	this._animation && this._animation.enable();
+			// 	this._animating = true;
+			// }
 
-			this._animation && this._animation.apply();
+			// this._animation && this._animation.apply();
 
 			if (force) {
 				this.end();
