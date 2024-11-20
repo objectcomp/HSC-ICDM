@@ -13,6 +13,25 @@ body {
     margin-bottom: 5px;
 }
 
+.link-block-disable a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.link-block-disable a {
+  pointer-events: none; /* Prevents the link from being clickable */
+  cursor: not-allowed;  /* Shows a 'not allowed' cursor */
+  color: #d3d3d3;        /* Very light gray color for the text */
+}
+
+.link-block-disable a .icon {
+  color: #d3d3d3;        /* Very light gray color for the icon */
+}
+
+.link-block-disable a span {
+  color: #d3d3d3;        /* Very light gray color for the text */
+}
+
 .dnerf {
   font-variant: small-caps;
 }
