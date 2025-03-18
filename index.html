@@ -146,41 +146,17 @@
       
       <!-- Heading for the image -->
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 10px;">Approach</h2>
+        <h2 class="title is-3" style="margin-bottom: 12px;">Compositing Multiple Foreground Objects with Structural Guidance</h2>
       </div>
 
       <div class="item" style="text-align: center;">
-        <!-- Your image here -->
-        <img src="static/images/method.jpg" alt="Bounding Box Results" 
-             style="display: block; margin: auto; width: 70%; height: auto; margin-bottom: 5px;"/>
+        <!-- Increased Image Size -->
+        <img src="static/images/two.jpg" alt="Bounding Box Results" 
+             style="display: block; margin: auto; width: 95%; max-width: 1400px; height: auto; margin-bottom: 10px;"/>
         
         <!-- Caption below the image -->
-        <h2 class="subtitle has-text-centered" style="margin-top: 5px;">
-          </h2>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      
-      <!-- Heading for the image -->
-      <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 10px;">Bounding Box Generation Results</h2>
-      </div>
-
-      <div class="item" style="text-align: center;">
-        <!-- Your image here -->
-        <img src="static/images/Bbox.jpg" alt="Bounding Box Results" 
-             style="display: block; margin: auto; width: 70%; height: auto; margin-bottom: 5px;"/>
-        
-        <!-- Caption below the image -->
-        <h2 class="subtitle has-text-centered" style="margin-top: 5px;">
-          The figure illustrates how the prompt drives creative and diverse image generation while preserving the same foreground and background.
+        <h2 class="subtitle has-text-justified" style="margin-top: 10px;">
+          The above figure presents the results of our method when compositing two foreground objects onto a background image using structural control inputs. Specifically, edge masks and HED masks are utilized to define the structural boundaries of the foreground objects, while a depth mask provides spatial guidance for the background. This multi-condition compositing approach ensures seamless object integration, maintaining structural coherence, depth consistency, and natural blending between the foreground and background elements. The results highlight the effectiveness of our framework in harmonizing multiple structural cues to generate visually coherent composite scenes.          .
         </h2>
       </div>
 
@@ -189,29 +165,107 @@
 </section>
 
 
+
+<!-- Custom CSS for Justification and Image Size -->
+<style>
+  .has-text-justified {
+    text-align: justify;
+  }
+</style>
+
+<style>
+  .has-text-justified {
+    text-align: justify;
+  }
+</style>
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       
       <!-- Heading for the image -->
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 10px;">Creativity and Diversity</h2>
+        <h2 class="title is-3" style="margin-bottom: 12px;">Bounding Box Generation Results</h2>
+      </div>
+
+      <div class="item" style="text-align: center;">
+        <!-- Increased Image Size -->
+        <img src="static/images/Bbox.jpg" alt="Bounding Box Results" 
+             style="display: block; margin: auto; width: 95%; max-width: 1400px; height: auto; margin-bottom: 10px;"/>
+        
+        <!-- Caption below the image -->
+        <h2 class="subtitle has-text-justified" style="margin-top: 10px;">
+          The above figure illustrates our inference-time bounding box generation results, where structural controls (edge mask, HED mask, and depth masks) and textual prompts guide the synthesis process. Our method ensures precise spatial control, allowing seamless integration of foreground objects into the background. The first row presents results on the <b>IP102 insect dataset</b> composited with leaf images from the <b>PlantVillage dataset</b>, demonstrating realistic object-background harmonization. The second row shows results on the <b>COCO dataset</b>, where objects such as car, bird, and bus are composited within the background scene. Our approach effectively maintains structural integrity, natural blending, and spatial coherence while enabling dynamic object placement and automated bounding box annotation.
+        </h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      
+      <!-- Heading for the image -->
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 12px;">Prompt-Guided Image Diversity with Consistent Structural Controls</h2>
       </div>
 
       <div class="item" style="text-align: center;">
         <!-- Your image here -->
         <img src="static/images/diversity.jpg" alt="Bounding Box Results" 
-             style="display: block; margin: auto; width: 70%; height: auto; margin-bottom: 5px;"/>
+             style="display: block; margin: auto; width: 90%; max-width: 1400px; height: auto; margin-bottom: 10px;"/>
         
         <!-- Caption below the image -->
-        <h2 class="subtitle has-text-centered" style="margin-top: 5px;">
-          Figure shows how the prompt will play its role for creative and diversie image generation.
+        <h2 class="subtitle has-text-justified" style="margin-top: 5px;">
+          The above figure demonstrates how textual prompts influence image diversity while maintaining the same structural control inputs. By varying the prompt while keeping edge maps, depth maps, or other conditioning inputs unchanged, our method enables flexible scene compositions and style variations. The first row presents results from the <b>COCO dataset</b>, where different prompts guide object placement and scene details, showcasing adaptability in complex settings. The second row features results from the <b>IP102 insect dataset</b> composited with leaf images from the <b>PlantVillage dataset</b>, highlighting our model’s ability to generate realistic insect-leaf interactions with varying textual descriptions. This showcases the model’s capability to integrate semantic guidance while preserving structural integrity, ensuring that different prompts yield diverse yet spatially consistent outputs.
         </h2>
       </div>
 
     </div>
   </div>
 </section>
+
+<style>
+  .has-text-justified {
+    text-align: justify;
+  }
+</style>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      
+      <!-- Heading for the image -->
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 12px;">Approach</h2>
+      </div>
+
+      <div class="item" style="text-align: center;">
+        <!-- Your image here -->
+        <img src="static/images/method.jpg" alt="Bounding Box Results" 
+             style="display: block; margin: auto; width: 90%; max-width: 1400px; height: auto; margin-bottom: 10px;"/>
+        
+        <!-- Caption below the image -->
+        <h2 class="subtitle has-text-justified" style="margin-top: 5px;">
+          Architectural overview of the proposed multi-condition diffusion framework for composite image generation. (a)  Pipeline: The model integrates foreground objects (Canny and HED masks) and background (Depth maps) through dedicated encoders and an adaptive gating-based fusion mechanism. Fused features are seamlessly injected into the pre-trained diffusion U-Net via a customized conditional normalization feature injection block. (b) Inference Pipeline: Demonstrates spatial control mechanisms for precise foreground object manipulation, including adjustments in size, scale, and bounding box placement.
+        </h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .has-text-justified {
+    text-align: justify;
+  }
+</style>
 
 
 
